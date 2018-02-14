@@ -15,17 +15,13 @@
        color: black;
      }
      main {
-       margin: 40px auto 40px;
+       margin: 30px auto 40px;
        width: 100%;
        text-align: center;
      }
-     .atelier img {
-       margin-top: 0;
-       width: 100%;
-     }
      .badger-container img {
        margin: 0 auto;
-       max-width: 60%;
+       max-width: 50%;
      }
      h1 {
        margin: 10px 0 0;
@@ -45,6 +41,28 @@
      a:hover {
        border-bottom: 2px solid #f06828;
      }
+     .half {
+       box-sizing: border-box;
+       margin: 0 0 6px;
+       width: 50%;
+       float: left;
+       line-height: 0;
+     }
+     .half:nth-of-type(odd) {
+       padding-right: 3px;
+     }
+     .half:nth-of-type(even) {
+       padding-left: 3px;
+     }
+     .half img {
+       width: 100%;
+     }
+     .full {
+       float: none;
+     }
+     .full img {
+       width: 100%;
+     }
 
      @media (min-width: 400px) {
        h1 {
@@ -58,17 +76,23 @@
          margin-top: 30px;
          width: 620px;
        }
-       .atelier img {
-         width: 80%;
-       }
        .badger-container img {
-         max-width: 40%;
+         max-width: 30%;
+       }
+       .half {
+         margin: 0 0 10px;
+       }
+       .half:nth-of-type(odd) {
+         padding-right: 5px;
+       }
+       .half:nth-of-type(even) {
+         padding-left: 5px;
        }
      }
 
      @media (min-height: 1000px) {
        main {
-         margin-top: 100px;
+         margin-top: 50px;
        }
      }
     </style>
@@ -85,8 +109,16 @@
         06 50 24 40 61<br>
         <a href="mailto:info@badgersbuttons.nl">info@badgersbuttons.nl</a>
       </p>
-      <div class="atelier">
-        <img src="atelier.jpg">
+      <div class="images">
+        <div class="half">
+          <img src="goud.jpg">
+        </div>
+        <div class="half">
+          <img src="roest.jpg">
+        </div>
+        <div class="full">
+          <img src="uil.jpg">
+        </div>
       </div>
     </main>
   </body>
