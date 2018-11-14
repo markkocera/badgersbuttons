@@ -31,7 +31,7 @@
        font-weight: normal;
      }
      p {
-       margin: 30px 0;
+       margin: 10px 0 40px;
        padding: 0;
      }
      a {
@@ -41,6 +41,11 @@
      a:hover {
        border-bottom: 2px solid #f06828;
      }
+     .halves:after {
+       content: "";
+       display: table;
+       clear: both;
+     }
      .half {
        box-sizing: border-box;
        margin: 0 0 6px;
@@ -48,10 +53,10 @@
        float: left;
        line-height: 0;
      }
-     .half:nth-of-type(odd) {
+     .halves .half:nth-of-type(odd) {
        padding-right: 3px;
      }
-     .half:nth-of-type(even) {
+     .halves .half:nth-of-type(even) {
        padding-left: 3px;
      }
      .half img {
@@ -59,6 +64,8 @@
      }
      .full {
        float: none;
+       line-height: 0;
+       margin-bottom: 6px;
      }
      .full img {
        width: 100%;
@@ -74,7 +81,7 @@
      @media (min-width: 700px) {
        main {
          margin-top: 30px;
-         width: 620px;
+         width: 700px;
        }
        .badger-container img {
          max-width: 30%;
@@ -82,11 +89,14 @@
        .half {
          margin: 0 0 10px;
        }
-       .half:nth-of-type(odd) {
+       .halves .half:nth-of-type(odd) {
          padding-right: 5px;
        }
-       .half:nth-of-type(even) {
+       .halves .half:nth-of-type(even) {
          padding-left: 5px;
+       }
+       .full {
+         margin-bottom: 10px;
        }
      }
 
@@ -106,18 +116,60 @@
         badger’s buttons, Amsterdam
       </h1>
       <p>
-        06 50 24 40 61<br>
-        <a href="mailto:info@badgersbuttons.nl">info@badgersbuttons.nl</a>
+        06 50 24 40 61 •
+        <a href="mailto:info@badgersbuttons.nl">info@badgersbuttons.nl</a> •
+        <a href="https://www.instagram.com/badgersbuttons/">volg ons op Instagram</a>
       </p>
       <div class="images">
-        <div class="half">
-          <img src="goud.jpg">
-        </div>
-        <div class="half">
-          <img src="roest.jpg">
+        <div class="halves">
+          <div class="half">
+            <img src="goud.jpg">
+          </div>
+          <div class="half">
+            <img src="roest.jpg">
+          </div>
         </div>
         <div class="full">
           <img src="uil.jpg">
+        </div>
+        <div class="full">
+          <img src="octopus.jpg">
+        </div>
+        <div class="halves">
+          <div class="half">
+            <img src="jas.jpg">
+          </div>
+          <div class="half">
+            <img src="dieren.jpg">
+          </div>
+        </div>
+        <div class="full">
+          <img src="schimmel.jpg">
+        </div>
+        <div class="full">
+          <img src="lintje.jpg">
+        </div>
+        <div class="halves">
+          <div class="half">
+            <img src="love.jpg">
+          </div>
+          <div class="half">
+            <img src="love-2.jpg">
+          </div>
+        </div>
+        <div class="halves">
+          <div class="half">
+            <img src="valentijn-2.jpg">
+          </div>
+          <div class="half">
+            <img src="valentijn.jpg">
+          </div>
+        </div>
+        <div class="full">
+          <img src="uilen.jpg">
+        </div>
+        <div class="full">
+          <img src="axolotl.jpg">
         </div>
       </div>
     </main>
